@@ -123,7 +123,7 @@ btnAddition.addEventListener('click',function()
 })
 btnEqual.addEventListener('click',function()
 {
-    value = eval(expression);
+    value = Math.trunc(eval(expression));
     console.log(eval(value));
     solnPanel.textContent=value;
     myAudio.play();
