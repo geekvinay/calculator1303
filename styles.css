@@ -1,0 +1,151 @@
+/* ===>         Importing the google fonts         <===*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Quantico&family=ZCOOL+QingKe+HuangYou&display=swap");
+/* ===>            Declaring variables globally             <===*/
+:root {
+  --blue-solution: #001f7b65;
+  --blue-btn: #3a4e89;
+  --blue-equalBtn: #0147ae;
+  --blue-background: #f1f3f6;
+  --main-font: "Montserrat", sans-serif;
+  --soln-font: "Quantico", sans-serif;
+  --soln-font2: "digital-font", monospace;
+}
+@font-face {
+  font-family: digital-font;
+  src: url("assets/DS-DIGIB.TTF");
+}
+/* ==> The Body element */
+
+body {
+  transform: scale(0.85);
+  margin: 0%;
+  padding: 0%;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #000000;
+  background-color: #000000;
+  background-image: url("../assets/Circuit\ Board.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: cover;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator--hero {
+  height: 670px;
+  width: 400px;
+  background-color: var(--blue-background);
+  border-radius: 10px;
+  border: 4px solid #3a4e892d;
+  box-shadow: 10px 10px 10px #2b2a2a3b;
+  background-color: #e0e5ec;
+  display: grid;
+  grid-template-rows: 50px 100px repeat(5, 70px);
+  grid-template-columns: 70px 70px 70px 70px;
+  grid-gap: 20px 15px;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#calculator--title {
+  grid-area: 1 / 1 / 2 / 5;
+  font-family: var(--soln-font2);
+  letter-spacing: 2pt;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+#calculator--soln {
+  grid-area: 2 / 1 / 3 / -1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #cad4c5, #b2bfa5);
+  border-radius: 10px;
+  font-family: var(--soln-font2);
+  text-align: right;
+  padding: 20px 13px;
+  font-size: 55px;
+  font-weight: 500;
+  box-shadow: 2px 2px 10px rgba(68, 56, 56, 0.2) inset;
+  letter-spacing: 2px;
+}
+
+div.contactMe {
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+a {
+  color: #fff;
+}
+a:active {
+  color: #fff;
+}
+a:visited {
+  color: #fff;
+}
+
+#background--soln {
+  grid-area: 2 / 1 / 3 / -1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0.12);
+  letter-spacing: 2px;
+  border-radius: 20px;
+  font-family: var(--soln-font2);
+  text-align: right;
+  padding: 20px 13px;
+  font-size: 55px;
+  font-weight: 500;
+}
+
+button.btn--17 {
+  grid-area: 7 / 1 / 8 / 3;
+  width: 100%;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  border: none;
+  background-color: #e0e5ec;
+  font-weight: 700;
+  color: var(--blue-btn);
+  font-size: 25px;
+  box-shadow: -3px -3px 10px #fff, 3px 3px 10px rgba(0, 0, 0, 0.198);
+}
+
+.btn--blue {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--blue-btn);
+  color: white;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.198);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    height: 100vh;
+    margin: auto 0;
+    transform: scale(0.8);
+  }
+}
